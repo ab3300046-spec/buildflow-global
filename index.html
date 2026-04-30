@@ -3,15 +3,22 @@
 <head>
   <title>BuildFlow Global</title>
 </head>
-<body>
 
-<h1>BuildFlow Global</h1>
+<body style="background:white; color:black; font-family:Arial; text-align:center; padding-top:50px;">
 
-<button onclick="runAnalysis()">Test App</button>
+  <h1>BuildFlow Global</h1>
 
-<p id="result"></p>
+  <button onclick="runAnalysis()" style="padding:15px 30px; font-size:18px; cursor:pointer;">
+    Test App
+  </button>
 
-<script src="script.js"></script>
+  <p id="result" style="margin-top:20px; font-size:20px;"></p>
+
+  <script>
+    function runAnalysis() {
+      document.getElementById("result").innerText = "App is working";
+    }
+  </script>
 
 </body>
 </html>
